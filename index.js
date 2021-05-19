@@ -3,7 +3,10 @@
 const graphContainer = document.getElementById('graph-container');
 // Instantiate the graph.
 const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
-  orientation: 'vertical-reverse'
+  orientation: 'vertical-reverse',
+  template: templateExtend('metro', {
+    colors: ['red', 'blue', 'green', 'gray']
+  })
 });
 
 // Simulate git commands with Gitgraph API.
