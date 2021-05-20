@@ -1,8 +1,4 @@
-// Get the graph container HTML element.
-
 const graphContainer = document.getElementById('graph-container');
-// Instantiate the graph.
-
 const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
   template: 'metro',
   //template: 'blackarrow',
@@ -11,12 +7,9 @@ const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
   orientation: 'vertical-reverse',
   author: 'Leng Li <rlengli@artmed.com.br>'
 });
-
-// Simulate git commands with Gitgraph API.
 const master = gitgraph.branch('master');
 master.commit('criando a master');
 master.tag('v1.0.0');
-
 const release = master.branch('release');
 release.commit('criando a release');
 const homolog = master.branch('homolog');
