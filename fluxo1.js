@@ -1,6 +1,6 @@
 // Get the graph container HTML element.
 
-const graphContainer = document.getElementById('graph-container1');
+const graphContainer = document.getElementById('graph-container');
 // Instantiate the graph.
 
 const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
