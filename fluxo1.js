@@ -12,13 +12,6 @@ const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
   author: 'Leng Li <rlengli@artmed.com.br>'
 });
 
-// var gitgraph = new GitGraph({
-//   template: 'blackarrow',
-//   reverseArrow: false,
-//   orientation: 'horizontal',
-//   mode: 'compact'
-// });
-
 // Simulate git commands with Gitgraph API.
 const master = gitgraph.branch('master');
 master.commit('criando a master');
